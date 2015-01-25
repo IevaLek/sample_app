@@ -21,6 +21,6 @@ ActiveRecord::Schema.define(version: 20150125000040) do
     t.string   "password_digest"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email"
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
 end
